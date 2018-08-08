@@ -1,0 +1,15 @@
+#box{
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+}
+#box1{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}
+#box2{
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+}

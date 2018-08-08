@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="box1" class="ap"></div>
+		<div class="ap"></div>
+		
+		<div id="box3">
+			<p>disman12</p>
+			<div>
+				<p>disman13</p>
+			</div>
+		</div>
+		
+		
+		<p class="pp">aaaaaaaaaa</p>
+		<p class="pp">bbbbbbbbbb</p>
+		<p class="pp">cccccccccc</p>
+		<p class="pp">dddddddddd</p>
+		<p class="pp">eeeeeeeeee</p>
+		
+		
+		<script type="text/javascript">
+//			$(document).ready(function(){
+//				alert("disman is a good man")
+//			})
+			$(document).ready(function(){
+				//DOM对象
+//				
+//				var jsDiv = document.getElementById("box1");
+				
+				//jQuery对象
+//				var $jqDiv = $("#box1").html("disman is a good man");
+				
+				//jq - Dom
+//				var jsDiv1 = $jqDiv[0]
+				
+//				var jsDiv2 = $jqDiv.get[0]
+				
+				//Dom - jq
+//				var $jqDiv1 = $(jsDiv)
+				
+				//元素选择器
+//				var $jqDivs = $('div')
+				
+//				$jqDivs.html("bbbbbbb")
+				
+				//类名选择器
+//				var $jqAp = $(".ap")
+				
+				//符合选择器
+//				var $jqObj = $(".ap,p,div").html('disman1')
+				
+				//通配符选择器
+//				var $tp = $("*").html("disman通配")
+				
+//----------------层次选择器----------------------------------------------------------------------------
+				
+				//迭代选择器
+//				var $jqObj1 =  $("#box3 p").html("dismannew")
+				
+				//父子选择器-直接子元素
+//				var $jqObj2 =  $("#box3>p").html("disman1")
+				
+				//同级选择器-同级相邻元素
+//				var $jqObj3 = $("#box1 + div").html("disman2")
+				
+				//同级选择器-同级之后所有元素
+//				var $jqObj3 = $("#box1 ~ div").html("disman2")
+
+//----------------简单过滤器----------------------------------------------------------------------------
+				//修改第一个
+				var $jqObj = $(".pp:first").html("dismana")
+				
+				//修改最后一个
+				var $jqObj1 = $(".pp:last").html("dismanl")
+				
+			})
+		</script>
+	</body>
+</html>
