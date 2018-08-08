@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<!--<div id="in" style="width: 100px;height: 100px;background-color: red;"></div>-->
+		<script type="text/javascript">
+//			var inp = document.getElementById('in')
+			//聚焦离焦事件
+//			inp.addEventListener("focus",function(){
+//				console.log('聚焦事件')
+//			},false)
+//			
+//			inp.addEventListener('blur',function(){
+//				console.log('离焦事件')
+//			},false)
+
+			//鼠标单击双击
+//			var time
+//			inp.addEventListener('click',function(){
+//				clearTimeout(time)
+//				time = setTimeout(function(){
+//					console.log('单击')
+//				},300)
+//			},false)
+//			inp.addEventListener('dblclick',function(){
+//				clearTimeout(time)
+//				console.log('双击')
+//			},false)
+		</script>
+		
+		<!--鼠标事件-->
+		<!--<ul>
+			<li>鼠标进入变红色</li>
+			<li>鼠标离开变蓝色</li>
+			<li>鼠标按下字体大两倍</li>
+			<li>鼠标松开字体小两倍</li>
+		</ul>
+		<script type="text/javascript">
+			var lis = document.getElementsByTagName('li')
+			for (var i = 0 ;i < lis.length; i++){
+				lis[i].addEventListener('mouseover',function(){
+					this.style.backgroundColor = 'red'
+				},false)
+				lis[i].addEventListener('mouseout',function(){
+					this.style.backgroundColor = 'blue'
+				},false)
+				lis[i].addEventListener('mousedown',function(){
+					this.style.fontSize = parseInt(getComputedStyle(this,null).fontSize) * 2 + "px"
+				},false)
+				lis[i].addEventListener('mouseup',function(){
+					this.style.fontSize = parseInt(getComputedStyle(this,null).fontSize) / 2 + "px"
+				},false)
+			}
+			
+			document.addEventListener('mouse',function(){
+				console.log('鼠标移动')
+			},false)
+		</script>-->
+		<script type="text/javascript">
+			document.addEventListener('keydown',function(e){
+				var event = e || window.event
+				console.log(event.altKey,event.ctrlKey,event.shiftKey,event.key,event.keyCode)
+			},false)
+			document.addEventListener('keyup',function(e){
+				var event = e || window.event
+				console.log(event.altKey,event.ctrlKey,event.shiftKey,event.key,event.keyCode)
+			},false)
+			document.addEventListener('keypress',function(e){
+				var event = e || window.event
+				console.log(event.altKey,event.ctrlKey,event.shiftKey,event.key,event.keyCode)
+			},false)
+		</script>
+		
+	</body>
+</html>

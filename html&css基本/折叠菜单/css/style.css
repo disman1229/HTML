@@ -1,0 +1,34 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+li a{
+	color: ;
+	text-decoration: none;
+}
+#menu{
+	width: 160px;
+	margin: 50px;
+}
+#menu li{
+	font-size: 14px;
+}
+#menu>li a{
+	display: inline-block;
+	width: 160px;
+	background-image: url(../img/03.png);
+	line-height: 24px;
+	text-indent: 55px;
+}
+#menu ul{
+	display: none;
+}
+#menu ul li{
+	text-indent: 30px;
+}
+#menu>li:hover ul{
+	display: block;
+}

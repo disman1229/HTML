@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#box{
+				width: 600px;
+				height: 400px;
+				background-color: aliceblue;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<form action="#" method="post">
+				<fieldset>
+					<legend>基本信息</legend>
+					<label for="name">姓名：</label>
+					<input type="text" name="name" id="name" value="" placeholder="请输入姓名"/><br />
+					<label for="age">年龄：</label>
+					<input type="text" name="age" id="age" value="" placeholder="请输入年龄"/><br />
+					<label>出生：</label>
+					<select id="birthday">
+						<option>1999</option>
+						<option>1989</option>
+						<option>1988</option>
+					</select>
+					<span>年</span>
+					<select id="birthday">
+						<option>2</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+					<span>月</span>
+					<select id="birthday">
+						<option>1</option>
+						<option>4</option>
+						<option>14</option>
+					</select>
+					<span>日</span>
+				</fieldset>
+				<fieldset id="">
+					<legend>其他信息</legend>
+					<span>你喜欢这个表单吗？</span><br />
+					<input type="radio" name="like" id="like1" value="1" /><label for="like1">喜欢</label>
+					<input type="radio" name="like" id="like0" value="0" /><label for="like0">不喜欢</label><br />
+					<span>你喜欢什么运动？</span><br />
+					<input type="checkbox" name="ch" id="ch1" />
+					<label for="ch1">篮球</label>
+					<input type="checkbox" name="ch" id="ch2" />
+					<label for="ch2">排球</label>
+					<input type="checkbox" name="ch" id="ch3" />
+					<label for="ch3">羽毛球</label><br />
+					<span>你的建议</span><br />
+					<textarea name="" rows="5" cols="50"></textarea><br />
+					<input type="submit" name="" id="" value="提交" />
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>

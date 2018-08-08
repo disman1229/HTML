@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#mainScreen{
+	width: 520px;
+	height: 854px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.bg{
+	width: 520px;
+	height: 854px;
+	position: absolute;
+	background-image: url(../img/bg.jpg);
+}
+#bg2{
+	top: -854px;
+}
+
+/*飞机*/
+#airplane{
+	width: 192px;
+	height: 134px;
+	background-image: url(../img/hero.png);
+	position: absolute;
+	left: 172px;
+	top: 720px;
+	transform: rotate(180deg) scale(0.6);
+	
+}
+
+.bullent{
+	position: absolute;
+	width: 26px;
+	height: 74px;
+	background-image: url(../img/huangse.png);
+	background-size: 26px 74px;
+}
+.tank{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-image: url(../img/tank.png);
+	background-size: 40px 40px;
+}

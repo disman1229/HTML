@@ -1,0 +1,62 @@
+a:hover{
+	text-decoration: none;
+}
+#box{
+	height: 1000px;
+	margin: 0 auto;
+	
+}
+#header1{
+	height: 32px;
+	color: #666;
+	border-bottom: 1px solid #C7C7C7;
+	background-color: #F7F7F7;
+	width: 100%;
+}
+#left{
+	line-height: 32px;
+	float: left;
+}
+#right{
+	line-height: 32px;
+	float: right;
+}
+#left ul li,#right ul li{
+	float: left;
+	padding: 0 10px;
+}
+#header2{
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+#logo{
+	height: 80px;
+	float: left;
+}
+#logo a{
+	background: url(../img/logo.png) no-repeat 0 center;
+	display: block;
+	height: 80px;
+	width: 200px;
+}
+#nav{
+	float: right;
+	padding-left: 30px;
+}
+#nav ul li{
+	float: left;
+	line-height: 80px;
+	
+}
+#nav ul li a{
+	font-size: 16px;
+	padding: 0 18px;
+	color: #666666;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+}
+#nav ul li a:hover{
+	background-color: rgba(240,240,240,0.5);
+}
