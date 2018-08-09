@@ -25,6 +25,12 @@
 		<p class="pp">eeeeeeeeee</p>
 		
 		
+		
+		<h1 class="pp">disman is a good man</h1>
+		<h2>disman is a nice man</h2>
+		<h3>disman is a handsome man</h3>
+		
+		
 		<script type="text/javascript">
 //			$(document).ready(function(){
 //				alert("disman is a good man")
@@ -80,6 +86,24 @@
 				//修改最后一个
 				var $jqObj1 = $(".pp:last").html("dismanl")
 				
+				//修改偶数									增加类
+				var $jqObj2 = $(".pp:even").html("disman2").addClass('app')
+				
+				//修改奇数									增加类
+				var $jqObj3 = $(".pp:odd").html("disman2").addClass('app')
+				
+				//删除样式
+				$jqObj2.removeClass("app")
+				
+				//指定行数修改      eq等于，gt大于，lt小于
+				var $jqObj4 = $(".pp:eq(1)").html("disman3").addClass('app')
+				
+				//设置标题元素
+				var $jqObj5 = $(":header").addClass('app')
+				
+				//去除所以与给定选择器匹配的元素
+				
+				var $jqObj5 = $("p:not(.pp)").addClass('app')
 			})
 		</script>
 	</body>
