@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="../内容过滤器/js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<input type="text" name="text1" id="text1" value="123" />
+		<input type="text" name="text2" id="text1" value="" />
+		<input type="text" id="text1" value="" />
+		<input type="text" name="text4" id="text1" value="" />
+		<input type="text" name="input" id="text1" value="" />
+		
+		
+		<form>
+			复选框：<input type="checkbox" />
+			单选按钮：<input type="radio" />
+			图像域：<input type="image" /><br />
+			文件域：<input type="file" /><br />
+			密码域：<input type="password" width="150px"/><br />
+			文本框：<input type="text" width="150px"/><br />
+			按钮：<input type="button" value="按钮"/><br />
+			重置：<input type="reset" value="重置"/><br />
+			提交：<input type="submit" value="提交"/><br />
+			隐藏域：<input type="hidden" value="这是隐藏元素"/><br />
+			
+			<div id="testDiv"><font color="blue">隐藏域的值：</font></div>
+		</form>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				
+				//属性选择器
+				//匹配包含给定属性的元素
+				var jqObj = $('input[name]')
+				console.log(jqObj)
+				
+				//匹配属性值为text1的元素
+				var jqObj1 = $('input[name = text1]')
+				console.log(jqObj1)
+				
+				//匹配属性值不等于text1的元素
+				var jqObj2 = $('input[name != text1]')
+				console.log(jqObj2)
+				
+				//匹配属性值含有text的元素
+				var jqObj3 = $('input[name *= text]')
+				console.log(jqObj3)
+				
+				//表单选择器（表单选择器是匹配经常出现在表单内出现的元素，但是匹配的元素不一定在表单中）
+				// input 匹配所有的input元素
+				var jqObj4 = $('form :input')
+				console.log(jqObj4)
+				
+				// button 匹配所有的普通按钮
+				var jqObj5 = $('form :button')
+				console.log(jqObj5)
+				
+				// checkbox 匹配所有的复选框
+				var jqObj6 = $('form :checkbox')
+				console.log(jqObj6)
+				
+				// file 匹配所有的文件域
+				var jqObj7 = $('form :file')
+				console.log(jqObj7)
+				
+				// hidden 匹配所有的不可见元素，或者type为hidden的元素
+				var jqObj8 = $('form :hidden')
+				console.log(jqObj8)
+				
+				// hidden 匹配所有的图像域
+				var jqObj9 = $('form :image')
+				console.log(jqObj9)
+				
+				// password 匹配所有的密码域
+				var jqObj10 = $('form :password')
+				console.log(jqObj10)
+				
+				// radio 匹配所有的单选按钮
+				var jqObj11 = $('form :radio')
+				console.log(jqObj11)
+				
+				// reset 匹配所有的重置按钮
+				var jqObj12 = $('form :reset')
+				console.log(jqObj12)
+				
+				// submit 匹配所有的提交按钮
+				var jqObj13 = $('form :submit')
+				console.log(jqObj13)
+				
+				// text 匹配所有的单行文本框
+				var jqObj14 = $('form :text')
+				console.log(jqObj14)
+			})
+			
+		</script>
+	</body>
+</html>
