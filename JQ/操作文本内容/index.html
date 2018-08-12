@@ -17,6 +17,10 @@
 			<p>disman is a cool man</p>
 			<p>disman is a handsome man</p>
 		</div>
+		div3:
+		<div>
+		</div>
+		<button id="btn">按钮</button>
 		
 		<script type="text/javascript">
 			$(document).ready(function(){
@@ -122,6 +126,19 @@
 				 * addClass() 为所有匹配的元素增加指定的CSS类名
 				 * removeClass() 从所有匹配的元素中删除全部或者指定的css类名
 				 */
+				
+//				$("div").addClass("box3")
+//				$("div").removeClass("box3")
+//				
+//				$("#btn").bind('click',function(){
+//					$("div").toggleClass("box3")
+//				})
+				
+				//对css的样式操作
+				
+				$("#btn").bind('click',function(){
+					$("#box2").css("background-color","red")
+				})
 			})
 		</script>
 	</body>

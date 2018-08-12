@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="../内容过滤器/js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<button id="btn">添加一个P标签</button>
+		<div>
+			<p>disman is a good man</p>
+			<p>disman is a nice man</p>
+			<p>disman is a cool man</p>
+			<p>disman is a handsome man</p>
+		</div>
+		
+		<script type="text/javascript">
+//			$("div").append("<p>我是新的</p>")
+			$(document).ready(function(){
+				//bind   delegate    on
+				/*
+				 * bind问题:
+				 * 1、隐式迭代方式
+				 * 2、对于尚未存储在的标签无法绑定事件
+				 */
+//				$("div p").bind("click",function(){
+//					console.log($(this).text())
+//				})
+				//移除bind
+//				$("div p").unbind("click")
+				
+				
+				/*
+				 * delegate问题:
+				 * 1、DOM层级如果比较深也很耗时间
+				 */
+//				$("div").delegate("p","click",function(){
+//					console.log($(this).text())
+//				})
+				//移除delegate
+//				$("div").undelegate("p","click")
+
+//				$("div").on("click","p",function(){
+//					console.log($(this).text())
+//				})
+				//移除on
+//				$("div").off("click","p")
+				
+				//绑定一次性事件
+//				$("#btn").one("click",function(){
+//					console.log("***********")
+//				})
+
+				/*
+				 * 模拟点击
+				 */
+				
+//				$("#btn").bind("click",function(e,msg1,msg2){
+//					console.log(msg1 + " " + msg2)
+//				}).trigger("click",["disman","good"])
+				
+				
+				//模拟悬停
+//				$("#btn").hover(function(){
+//					console.log("移进")
+//				},function(){
+//					console.log("移出")
+//				})
+
+				
+			})
+		</script>
+	</body>
+</html>
