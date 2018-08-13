@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="../内容过滤器/js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			#box{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+		<button id="btn1">隐藏</button>
+		<button id="btn2">显示</button>
+		<button id="btn3">切换状态</button>
+		<script type="text/javascript">
+			//帧动画
+			/*原生js方法
+			document.getElementById("btn1").onclick = function(){
+				document.getElementById("box").style.display="none"
+			}
+			*/
+			
+			//hide 默认值600,normal 默认值400,fast 默认值200
+			var div = $("#box")
+			$("#btn1").click(function(){
+				div.hide(1000,function(){
+					console.log("动画隐藏结束")
+				})
+			})
+			$("#btn2").click(function(){
+				div.show(1000,function(){
+					console.log("动画显示结束")
+				})
+			})
+			$("#btn3").click(function(){
+				div.toggle(1000)
+			})
+		</script>
+	</body>
+</html>
