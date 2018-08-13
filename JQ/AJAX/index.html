@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="../内容过滤器/js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="box"></div>
+		<button id="btn">按钮</button>
+		<script type="text/javascript">
+			$("#btn").bind("click",function(){
+				$.ajax({
+					type:"get",
+					url:"http://127.0.0.1/AJAX/home.json",
+					data:{a:1,b:2},
+					dataType:"Json",
+					success:function(data,textStatus){
+						var d = data["data"]["act_info"]["act_rows"]
+						console.log(d)
+						
+						for (var i=0;i < d.length;i++){
+							var info = d[i]
+							var $p = $("<p>"+info["name"]+"</p>")
+							$("#box").append($p)
+						}
+					}
+				});
+			})
+		</script>
+	</body>
+</html>

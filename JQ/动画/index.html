@@ -12,8 +12,8 @@
 			}
 		</style>
 	</head>
-	<body>
-		<div id="box"></div>
+	<body style="position: relative;">
+		<div id="box" style="position: absolute;left: 0;top: 0;"></div>
 		<button id="btn1">隐藏</button>
 		<button id="btn2">显示</button>
 		<button id="btn3">切换状态</button>
@@ -26,19 +26,67 @@
 			*/
 			
 			//hide 默认值600,normal 默认值400,fast 默认值200
+//			var div = $("#box")
+//			$("#btn1").click(function(){
+//				div.hide(1000,function(){
+//					console.log("动画隐藏结束")
+//				})
+//			})
+//			$("#btn2").click(function(){
+//				div.show(1000,function(){
+//					console.log("动画显示结束")
+//				})
+//			})
+//			$("#btn3").click(function(){
+//				div.toggle(1000)
+//			})
+			
+			//淡入淡出
+//			var div = $("#box")
+//			$("#btn1").click(function(){
+//				div.fadeOut(1000,function(){
+//					console.log("动画隐藏结束")
+//				})
+//			})
+//			$("#btn2").click(function(){
+//				div.fadeIn(1000,function(){
+//					console.log("动画显示结束")
+//				})
+//			})
+//			$("#btn3").click(function(){
+//				div.fadeToggle(1000)
+//			})
+
+			//通过高度滑动显示、隐藏匹配的元素
+//			var div = $("#box")
+//			$("#btn1").click(function(){
+//				div.slideUp(1000,function(){
+//					console.log("动画隐藏结束")
+//				})
+//			})
+//			$("#btn2").click(function(){
+//				div.slideDown(1000,function(){
+//					console.log("动画显示结束")
+//				})
+//			})
+//			$("#btn3").click(function(){
+//				div.slideToggle(1000)
+//			})
+
+			
+			//自定动画
 			var div = $("#box")
+			//animate(params[,speed][,callback])    透明度                                        暂停
+			var a = 			div.animate({left:"200px",top:"100px",opacity:"0.5"},1000).delay(1000).animate({left:"-=200px"},1000)
 			$("#btn1").click(function(){
-				div.hide(1000,function(){
-					console.log("动画隐藏结束")
-				})
+				a.stop(true,false)
 			})
+			
+			//判断动画是否正常执行
 			$("#btn2").click(function(){
-				div.show(1000,function(){
-					console.log("动画显示结束")
-				})
-			})
-			$("#btn3").click(function(){
-				div.toggle(1000)
+				if(a.is(":animated")){
+					console.log("动画正在执行")
+				}
 			})
 		</script>
 	</body>
