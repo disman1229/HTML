@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="../../JQ/内容过滤器/js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			mark{
+				/*background-color: red;*/
+				color: blue;
+				font-size: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="text" list="data" />
+		//下拉选项
+		<datalist id="data">
+			<option>good</option>
+			<option>nice</option>
+			<option>cool</option>
+			<option>handsome</option>
+		</datalist>
+		//下拉隐藏
+		<details>
+			<summary>disman</summary>
+			<p>disman is a good man</p>
+		</details>
+		//强调
+		<p>disman is a <mark>good</mark> man</p>
+		//滚动条
+		<progress id="pro" max="100" value="0"></progress>
+		
+		<form action="" >
+			<input type="range" max="100" min="0" value="10" />
+			<input type="date" name="" id="" value="" />
+			<input type="week" name="" id="" value="" />
+			<input type="month" name="" id="" value="" />
+			<input type="datetime-local" name="" id="" value="" />
+			<input type="time" name="" id="" value="" />
+			<input type="search" name="" id="" value="" />
+			<input type="color" name="" id="" value="" />
+			<input type="submit" value=""/>
+		</form>
+		<script type="text/javascript">
+			var num = 0
+			var pro = $("#pro")
+			setInterval(function(){
+				pro.val(num++)
+			},100)
+		</script>
+		
+	</body>
+</html>
